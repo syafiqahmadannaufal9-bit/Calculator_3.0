@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="display">
+        <div class="display-number" id="display">0</div>
+    </div>
+    <div class="container">
+    <div id="history">
+      <div>
+        <h3>Riwayat Kalkulasi</h3>
+      <button id="toggleBtn">dark mode</button>
+      </div>
+      <ul id="historyList"></ul>
+    </div>
+    
+  <div class="calculator">
+
+    
+    <div class="buttons">
+
+      <button class="C" onclick="clearDisplay()">C</button>
+      <button class="button-calculator" onclick="append('%')">%</button>
+      <button class="button-calculator" onclick="append('/')">÷</button>
+      <button class="operator" onclick="append('*')">x</button>
+
+      <button class="button-calculator" onclick="append('7')">7</button>
+      <button class="button-calculator" onclick="append('8')">8</button>
+      <button class="button-calculator" onclick="append('9')">9</button>
+      <button class="operator" onclick="append('-')">−</button>
+
+      <button class="button-calculator" onclick="append('4')">4</button>
+      <button class="button-calculator" onclick="append('5')">5</button>
+      <button class="button-calculator" onclick="append('6')">6</button>
+      <button class="operator" onclick="append('+')">+</button>
+
+      <button class="button-calculator" onclick="append('1')">1</button>
+      <button class="button-calculator" onclick="append('2')">2</button>
+      <button class="button-calculator" onclick="append('3')">3</button>
+      <button onclick="calculate()">=</button>
+
+      <button class="button-calculator" onclick="append('0')">0</button>
+      <button class="button-calculator" onclick="append('.')">.</button>
+    </div>
+  </div>
+</div>
+  
+    <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* template */
+:root{
+    --white-primary: rgb(230, 240, 230);
+    --white-secondary: rgb(210, 210, 210);
+    --white-third: rgb(170, 170, 170);
+    --black-primary: rgb(30, 30, 30);
+    --black-secondary: rgb(50, 50, 50);
+    --black-third: rgb(80, 80, 80);
+}
+*{
+    margin: 0;
+    transition: background-color 0.3s, transform 0.2s;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+body.dark-mode {
+    background-color: #121212;
+}
+/* hasil-calculator*/
+.display{
+        background-color: var(--white-secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.display.dark-mode {
+    background-color: var(--black-secondary);
+}
+.display-number {
+      background-color: var(--white-primary);
+      color: var(--black-secondary);
+      font-size: 4em;
+      padding: 10px;
+      border-radius: 10px;
+      width: 95%;
+      height: 1.7em;
+      align-items: center;
+      text-align: right;
+      margin: 20px 0  ;
+}
+.display-number.dark-mode{
+    background-color: var(--black-primary);
+    color: var(--white-secondary);
+    
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 29rem;
+}
+/* history */
+#history {
+  background-color: var(--white-primary);
+  padding: 15px;
+  width: 50%;
+  color: var(--black-secondary);
+}
+#history h3{
+    font-size: 30px;
+
+}
+#history.dark-mode {
+    color: var(--white-secondary);
+    background-color: var(--black-primary);
+}
+#history div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#historyList{
+    margin: 10px 0 0 0;
+    background-color: var(--white-secondary);
+    padding: 25px;
+    border-radius: 8px;
+    color: var(--black-secondary);
+}
+#historyList.dark-mode{
+    color: var(--white-secondary);
+    background-color: var(--black-secondary);
+}
+/* button dark mode */
+#toggleBtn{
+        margin: 0 0 15px 0;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+#toggleBtn:hover {
+        transform: scale(0.9);
+}
+/* perhitungan-calculator */
+.calculator {
+      background-color: var(--white-primary);
+      padding: 20px;
+      width: 50%;
+    }
+.calculator.dark-mode{
+    background-color: var(--black-primary);
+}
+.C{
+    background-color: rgba(255, 0, 0, 0.6);
+    color: red;
+    font-size: 27px;
+}
+.C:hover{
+    background-color: red;
+    color: rgb(150, 0, 0);
+}
+.C.dark-mode{
+    background-color: rgba(255, 0, 0, 0.6);
+    color: red;    
+}
+.buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+}
+
+button {
+      padding: 15px;
+      font-size: 1.2em;
+      border: none;
+      height: 4.8rem;
+      border-radius: 10px;
+      background-color: var(--white-secondary);
+      color: var(--black-primary);
+      cursor: pointer;
+      transition: background-color 0.3s;
+}
+button.dark-mode{
+    background-color: var(--black-secondary);
+    color: var(--white-primary);
+}
+
+button:hover {
+    background-color: var(--white-third);
+    }
+button.dark-mode:hover {
+    background-color: var(--black-third);
+
+}
+
+.operator {
+    background-color: var(--white-secondary);
+}
+
+.operator:hover {
+    background-color: var(--white-third);
+}
+  
+
+
+
